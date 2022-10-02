@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-
+import { SvgIcon } from "@material-ui/core"
 
 const styles = {
   root: {
@@ -28,9 +28,8 @@ function DenseAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" className={classes.color}> 
         <Toolbar variant="dense">
-          <Typography variant="h6" className={classes.whiteColor}>
-            React Quiz
-          </Typography>
+          <img src={"/public/logo.png"} width={60} height={60} />
+          <Typography style={{ color: "white", margin: "0 auto", fontSize: "25px" }} as="h2">James Webb Trivia</Typography>
         </Toolbar>
       </AppBar>
     </div>

@@ -1,13 +1,14 @@
 export default [
     {
-        question: 'We can go for keys when there is possibility that our user could change the data?',
+        question: 'Q1. About how did the James Webb Telescope cost to build?',
         answers: [
-            'Keys',
-            'Ref',
-            'Both',
-            'None of above'
+            '$8.7 Billion',
+            '$6.5 Billion',
+            '$15 Billion',
+            '$1 Billion'
         ],
-        correct: 1
+        correct: 1,
+        explaination: 'This is explaination',
     },
 
     {
@@ -18,6 +19,7 @@ export default [
             'None of the Above',
             'Cannot Be Determined'
         ],
+        explaination: 'This is explaination',
         correct: 1
     },    
     {
@@ -28,7 +30,8 @@ export default [
             'getState()', 
             'None of the Above'
         ],    
-        correct: 1
+        correct: 1,
+        explaination: 'This is explaination',
     },    
     {
         question: 'Arbitrary inputs of components are called?',
@@ -38,7 +41,8 @@ export default [
             'Elements', 
             'Ref'
         ],    
-        correct: 2
+        correct: 2,
+        explaination: 'This is explaination',
     },
     {
         question: '_____ can be done while more than one element needs to be returned from a component?',
@@ -48,7 +52,8 @@ export default [
             'Insulation', 
             'Wrapping'
         ],    
-        correct: 4
+        correct: 4,
+        explaination: 'This is explaination',
     },
     {
         question: 'Which of the following needs to be updated to achieve dynamic UI updates?',
@@ -58,7 +63,8 @@ export default [
             'Components', 
             'None of the Above'
         ],    
-        correct: 1
+        correct: 1,
+        explaination: 'This is explaination',
     },
     {
         question: 'Lifecycle methods are mainly used _____',
@@ -68,6 +74,7 @@ export default [
             'Free up resources', 
             'None of the Above'
         ],    
-        correct: 3
+        correct: 3,
+        explaination: 'This is explaination',
     }
 ]

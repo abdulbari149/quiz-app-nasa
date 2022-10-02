@@ -34,6 +34,7 @@ class Main extends Component {
                         data[count].answers[3] 
                     ],
             correct: data[count].correct,
+            explaintion: data[count].explaination,
             count: this.state.count + 1
         });
     }
@@ -57,7 +58,8 @@ class Main extends Component {
             this.insertData(count);
             this.setState({
                 showButton: false,
-                questionAnswered: false
+                questionAnswered: false,
+                explaination: ''
             });
         }
     }
@@ -77,8 +79,8 @@ class Main extends Component {
 
   render() {
 
-    let { count, total, question, answers, correct, showButton, questionAnswered, displayPopup, score} = this.state;
-
+    let { count, total, question, answers, correct, showButton, questionAnswered, displayPopup, score, explaintion } = this.state;
+    console.log({ explaintion })
     return (
       <div className="container">
        
@@ -97,6 +99,7 @@ class Main extends Component {
 
                 <Answers 
                     answers={answers} 
+                    explaination={explaintion}
                     correct={correct} 
                     showButton={this.handleShowButton} 
                     isAnswered={questionAnswered} 
